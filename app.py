@@ -76,7 +76,7 @@ def code_interpreter(request: CodeRequest):
     if result["success"]:
         return {
             "error": [],
-            "result": result["output"].rstrip("\n"),
+            "result": result["output"],
         }
 
     return {
